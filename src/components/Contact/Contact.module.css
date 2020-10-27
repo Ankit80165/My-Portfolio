@@ -1,0 +1,92 @@
+.contactSection {
+    padding-top: 2.5rem;
+    background-color: #53354a;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #2b2e4a;
+    clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding: 2.5rem 1rem 1rem 1rem;
+}
+
+.title {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #e84545;
+}
+
+.title h1 {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.listItem {
+    margin: 0.5rem 0;
+}
+
+.listItem a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #903749;
+}
+
+.listItem a:hover,
+.listItem a:active {
+    text-decoration: none;
+    color: #e84545;
+}
+
+.para {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #903749;
+    background-color: #2b2e4a;
+}
+
+@media (min-width:768px) {
+    .contactSection {
+        clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        margin: 3.5rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h1 span {
+        display: block;
+    }
+
+    .list {
+        text-align: left;
+    }
+}

@@ -1,0 +1,32 @@
+.NavItem {
+    margin: 0 1.5rem;
+}
+
+.NavItem a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    /* display: inline-block; */
+    padding: 1.5rem 2rem;
+    /* position: relative; */
+}
+
+.NavItem a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.NavItem a:hover:after {
+    width: 100%;
+    left: 0;
+}

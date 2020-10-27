@@ -1,0 +1,16 @@
+.EducationSection {
+    margin: 10rem 0;
+    padding: 2.5rem 0;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(to top, rgba(144, 55, 73, 0.90) 80%, rgba(255, 255, 255, 0.2)), url("../../assets/education.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: skewY(-3deg);
+}
+
+@media (min-width:768px) {
+    .EducationSection {
+        margin: 15rem 0;
+    }
+}

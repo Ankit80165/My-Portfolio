@@ -1,0 +1,107 @@
+.NavBar {
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #2b2e4a;
+    padding: 8px 16px;
+}
+
+.NavBarList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavLinks {
+    text-decoration: none;
+    color: #e84545;
+    font-size: 1rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.NavLinks:hover {
+    color: #903749;
+    text-decoration: none;
+}
+
+.ListContainer {
+    position: absolute;
+    background-color: #2b2e4a;
+    width: 100%;
+    left: 0;
+    top: -230px;
+    padding: 16px 16px;
+    z-index: 99;
+    transition: all 0.2s;
+}
+
+.toDown {
+    top: 48px;
+}
+
+.NavBarListItem {
+    margin: 0.5rem 0;
+}
+
+.iconHolder {
+    z-index: 100;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #e84545;
+}
+
+@media (min-width:760px) {
+    .NavBar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 6px 16px;
+    }
+
+    .iconHolder {
+        display: none;
+    }
+
+    .ListContainer {
+        position: static;
+        z-index: 1;
+        padding: 0;
+        background-color: inherit;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .NavBarList {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .NavLinks {
+        display: inline-block;
+    }
+
+    .NavLinks::after {
+        content: "";
+        display: block;
+        margin-top: 8px;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.2s;
+    }
+
+    .NavLinks:hover {
+        color: #e84545;
+    }
+
+    .NavLinks:hover::after {
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.headingWrapper {
+    margin: 2.5rem 0;
+    text-align: center;
+    /* transform: skewY(3deg); */
+}
+
+.headingWrapper h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.headingWrapper hr {
+    width: 30%;
+    border-top: 2px solid #2b2e4a;
+}
+
+@media (min-width:768px) {
+    .headingWrapper {
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        /* transform: skewY(3deg); */
+    }
+
+    .headingWrapper h1 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: lighter;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .headingWrapper hr {
+        width: 30%;
+        border-top: 2px solid #2b2e4a;
+    }
+}
